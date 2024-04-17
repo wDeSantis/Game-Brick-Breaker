@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
+
+*{
+   padding: 0;
+   margin: 0;
+}
+body{
+   background: url(../images/BG.png);
+   background-position: center-top;
+   background-size: cover;
+}
+canvas{
+   width: 1100px;
+   height: 720px;
+   display: block;
+   margin: 0 auto;
+   background: #eee;
+   border: 3px solid red;
+}
+
+#container{
+   width: 1400px;
+   margin: auto;
+   margin-top: 80px;
+   position: relative;
+   visibility: hidden;
+}
+
+#btnStart{
+   position: absolute;
+   width: 450px;
+   height: 110px;
+   top: 75%;
+   left: 35%;
+   background: url(../images/btnStart.png);
+   border-style: none;
+   opacity: 0;
+   transition: opacity 1s ease-in-out;
+   pointer-events: none;
+   
+}
+
+#btnRestart{
+   position: absolute;
+   width: 333px;
+   height:100px;
+   top: 75%;
+   left: 38%;
+   background: url(../images/RESTART.png);
+   border-style: none;
+   opacity: 0;
+   transition: opacity 1s ease-in-out;
+   pointer-events: none;
+}
+
+#right{
+   position: absolute;
+   top: 0px;
+   right: 0px;
+   color: #eee;
+   width: 133px;
+   margin-right: -10px;
+   visibility: hidden;
+}
+
+#lifebar{
+   background: url(../images/sprite_barre_de_vies.png) 0 0;
+   width: 134px;
+   height: 51px;
+   background-size: 564px 51px;
+}
+
+#viesLabel{
+   margin-left: 20px;
+   font-family: 'Shizuru', sans-serif;
+   font-size: 30px;
+}
+
+#loading{
+   width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 33%;
+}
+
+.segment{
+   background-color: whitesmoke;
+   width: 0px;
+   height: 25px;
+   float: left;
+}
+#chargement{
+   color: whitesmoke;
+   font-size: 30px;
+}
+#chargementContainer{
+   margin-top: 10px;
+}
+
+#score{
+   margin-left: 20px;
+   font-size: 30px;
+   font-family: 'Shizuru', sans-serif;
+}
+
+#scoreNombre{
+   margin-left: 25px;
+   color: whitesmoke;
+}
+
+#defeatText{
+   font-family: 'Shizuru', sans-serif;
+   position: absolute;
+   font-size: 100px;
+   color: red;
+   top: 40%;
+   left: 27%;
+   visibility: hidden;
+}
+
+#victoryText{
+   font-family: 'Shizuru', sans-serif;
+   position: absolute;
+   font-size: 100px;
+   color: rgba(135, 202, 27, 0.952);
+   top: 40%;
+   left: 35%;
+   visibility: hidden;
+}
+

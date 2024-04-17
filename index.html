@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DanBreakoid</title>
+    <link rel="stylesheet" href="CSS/stylesheet.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+</head>
+<body onload="delayAnimationSplash()">
+    <div>
+        <audio id="soundIntro"></audio>
+        <audio id="soundIngame"></audio>
+        <audio id="soundBrickHit"></audio>
+        <audio id="soundGameOver"></audio>
+        <audio id="soundVictory"></audio>
+    </div>
+    <div id="container">
+        <canvas id="canvas"></canvas>
+        <button id="btnStart" onclick="startGame()"></button>
+        <button id="btnRestart" onclick="restart()"></button>
+        <div id="victoryText"></div>
+        <div id="defeatText"></div>
+        <div id="loading">
+            <div id="barre">
+                <div class="segment"></div>
+                <div class="segment"></div>
+                <div class="segment"></div>
+                <div class="segment"></div>
+            </div><br>
+            <div id="chargementContainer">
+                <p id="chargement"></p>
+            </div>
+        </div>
+        <div id="right">
+            <div id="vies">
+                <h2 id="viesLabel">LIVES</h2>
+                <div id="lifebar"></div>
+            </div>
+            <div id="score">
+                <h2 id="scorelabel">Score</h2>
+                <p id="scoreNombre">0</p>
+            </div>
+        </div>
+    </div>
+    <script src="JS/script.js"></script>
+</body>
+</html>
